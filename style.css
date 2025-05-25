@@ -1,0 +1,260 @@
+/* Warna dasar */
+:root {
+  --warna-utama: #4CAF50;
+  --warna-bg: #121212;
+  --warna-card: #1e1e1e;
+  --warna-teks: #ffffff;
+}
+
+/* Reset dan gaya umum */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--warna-bg);
+  color: var(--warna-teks);
+}
+
+/* Header dan footer */
+header,
+footer {
+  background: var(--warna-card);
+  color: var(--warna-teks);
+  padding: 1em;
+  text-align: center;
+}
+
+/* Navigasi */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: var(--warna-utama);
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Konten utama */
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Kartu mobil */
+section.mobil {
+  background: var(--warna-card);
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+section.mobil img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+/* Tombol */
+.btn,
+button {
+  background-color: var(--warna-utama);
+  color: var(--warna-teks);
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover,
+button:hover {
+  background-color: #45a049;
+}
+
+/* Form */
+form input,
+form select,
+form button {
+  background-color: #2a2a2a;
+  color: var(--warna-teks);
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section.mobil {
+    padding: 10px;
+  }
+
+  form input,
+  form select,
+  form button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Transisi tombol dan link */
+.btn, button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn:hover, button:hover {
+  transform: scale(1.05);
+}
+
+/* Efek fade-in saat halaman dimuat */
+.fade-in {
+  animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.kontak-box {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #1c1c1e;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  text-align: center;
+  color: #fff;
+}
+
+.kontak-box a {
+  color: #00d9a6;
+  text-decoration: none;
+}
+
+.kontak-info p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.kontak-box .btn {
+  margin-top: 1.5rem;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #00d9a6;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.kontak-box .btn:hover {
+  background-color: #00b48c;
+  transform: scale(1.05);
+}
+
+.form-box {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #1e1e20;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #2a2a2e;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+form input:focus, form select:focus {
+  border-color: #00d9a6;
+  outline: none;
+}
+
+.subtext {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #00d9a6;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #00b48c;
+  transform: scale(1.05);
+}
+
+.centered-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
